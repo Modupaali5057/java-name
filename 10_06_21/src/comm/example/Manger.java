@@ -1,17 +1,20 @@
 package comm.example;
 
-public class Manager extends Employee {
+public class Manger extends Employee {
 	private String departmentName;
 
-	public Manager() {
+	public Manger() {
 		super();
 	}
 
-	public Manager(Integer employeeId, String firstName, String lastName, String email,String departmentName) {
-		super(employeeId, firstName, lastName, email);
+	
+
+	public Manger(Integer employeeId, String firstName, String lastName, String email, EmployeeType employeeType,String departmentName) {
+		super(employeeId, firstName, lastName, email, employeeType);
 		this.departmentName=departmentName;
-		
 	}
+
+
 
 	public String getDepartmentName() {
 		return departmentName;
