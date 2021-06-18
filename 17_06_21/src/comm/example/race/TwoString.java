@@ -4,6 +4,7 @@ package comm.example.race;
 
 public class TwoString {
 	
+	
 	public synchronized static void print(String str1,String str2)
 	{
 		System.out.print(str1);
