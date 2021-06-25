@@ -19,9 +19,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * Hello world!
  *
  */
-sjdosakjd
-dsajksajdjakhdisasai
-aklksajdjaifjisa
+
 public class App {
 	private static Scanner scanner=new Scanner(System.in);
 	public static void main(String[] args) {
