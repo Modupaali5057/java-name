@@ -1,4 +1,5 @@
 package org.example.demo.service;
+
 import java.sql.SQLException;
 import java.util.List;
 
@@ -28,6 +29,12 @@ public class BookServiceImpl implements BookService {
 	public List<Book> displayAllBook() throws SQLException {
 		// TODO Auto-generated method stub
 		return bookDaoImpl.displayAllBook();
+	}
+
+	@Override
+	public List<Book> findBookById(Integer id) throws SQLException {
+		// TODO Auto-generated method stub
+		return bookDaoImpl.findBookById(id);
 	}
 
 }
