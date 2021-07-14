@@ -16,7 +16,9 @@ public class ItemDto {
 	private String itemName;
 	private Double itemPrice;
 	private Boolean isAvailable;
+	
+		
+	}
 
 	
 
-}

@@ -21,7 +21,6 @@ import com.example.demo.service.ItemService;
 import com.example.demo.ui.ItemRequestModel;
 import com.example.demo.ui.ItemResponseModel;
 @RestController
-@RequestMapping("/items")
 public class ItemController {
 	
 	private ItemService itemService;
@@ -33,13 +32,13 @@ public class ItemController {
 		this.modelMapper = modelMapper;
 		this.environment=environment;
 	}
-	@GetMapping("/status")
+	@GetMapping
 	public ResponseEntity<String> getStatuc()
 	{
 		return ResponseEntity.ok("application running port:"+environment.getProperty("local.server.port"));
 	}
 	
-	@PostMapping
+	@PostMapping("/items")
 	public ResponseEntity<ItemResponseModel> createItem(@RequestBody ItemRequestModel itemDetails)
 	{
 		System.out.println(itemDetails);
@@ -51,18 +50,18 @@ public class ItemController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(model);
 		
 	}
-	@GetMapping
+	@GetMapping("/items")
 	public ResponseEntity<List<ItemResponseModel>> getAllItems()
 	{
 		return ResponseEntity.status(HttpStatus.OK).body(itemService.getAllItems());
 	}
 
-	@GetMapping("/find/{itemName}")
+	@GetMapping("/items/find/{itemName}")
 	public ResponseEntity<List<ItemResponseModel>> getByItemname(@PathVariable("itemName") String itemName)
 	{
 		return ResponseEntity.ok(itemService.findByItemName(itemName));
 	}
-	@GetMapping("/{itemNumber}")
+	@GetMapping("/items/{itemNumber}")
 	public ResponseEntity<ItemResponseModel> getByItemNumber(@PathVariable("itemNumber") String itemNumber)
 	{
 		return ResponseEntity.ok(itemService.findByItemNumber(itemNumber));
