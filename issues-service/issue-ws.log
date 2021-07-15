@@ -1,0 +1,182 @@
+2021-07-14 04:29:32.453  INFO 5196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 04:29:32.864  INFO 5196 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9090
+2021-07-14 04:29:33.707  INFO 5196 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=issue-service, profiles=[default], label=null, version=5f7dfff238b1672a7bdcddaaaaecf124a49813c6, state=null
+2021-07-14 04:29:33.708  INFO 5196 --- [restartedMain] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/dnilay/config-server-repo.git/file:C:\Users\001ZQF~1\AppData\Local\Temp\config-repo-9396803084752824825\application.yml'}]
+2021-07-14 04:29:33.718  INFO 5196 --- [restartedMain] c.example.demo.IssuesServiceApplication  : No active profile set, falling back to default profiles: default
+2021-07-14 04:29:34.551  INFO 5196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-14 04:29:34.665  INFO 5196 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 1 MongoDB repository interfaces.
+2021-07-14 04:29:34.858  INFO 5196 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=527905e9-cca5-3fd0-aff0-aa596cadce2c
+2021-07-14 04:29:35.231  INFO 5196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-07-14 04:29:35.238  INFO 5196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-14 04:29:35.238  INFO 5196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 04:29:35.320  INFO 5196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-14 04:29:35.320  INFO 5196 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1591 ms
+2021-07-14 04:29:35.525  INFO 5196 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-14 04:29:35.564  INFO 5196 --- [cluster-ClusterId{value='60eeca9fa79ea521c2f7cb7b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:60}] to localhost:27017
+2021-07-14 04:29:35.564  INFO 5196 --- [cluster-rtt-ClusterId{value='60eeca9fa79ea521c2f7cb7b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:61}] to localhost:27017
+2021-07-14 04:29:35.564  INFO 5196 --- [cluster-ClusterId{value='60eeca9fa79ea521c2f7cb7b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12825400}
+2021-07-14 04:29:35.597  WARN 5196 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-14 04:29:35.653  WARN 5196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-07-14 04:29:35.682  WARN 5196 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-14 04:29:35.779  WARN 5196 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myExceptionHandler' defined in file [C:\Users\001ZQF744\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\issues-service\target\classes\com\example\demo\exception\MyExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+2021-07-14 04:29:35.782  INFO 5196 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-14 04:29:35.798  INFO 5196 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 04:29:35.815 ERROR 5196 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myExceptionHandler' defined in file [C:\Users\001ZQF744\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\issues-service\target\classes\com\example\demo\exception\MyExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318) ~[spring-boot-2.4.8.jar:2.4.8]
+	at com.example.demo.IssuesServiceApplication.main(IssuesServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.8.jar:2.4.8]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at com.example.demo.exception.MyExceptionHandler.<init>(MyExceptionHanlder.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 25 common frames omitted
+
+2021-07-14 05:07:50.832  INFO 10116 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-14 05:07:51.238  INFO 10116 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:9090
+2021-07-14 05:07:51.308  INFO 10116 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Connect Timeout Exception on Url - http://localhost:9090. Will be trying the next url if available
+2021-07-14 05:07:51.309  WARN 10116 --- [restartedMain] c.c.c.ConfigServicePropertySourceLocator : Could not locate PropertySource: I/O error on GET request for "http://localhost:9090/issue-service/default": Connection refused: no further information; nested exception is java.net.ConnectException: Connection refused: no further information
+2021-07-14 05:07:51.310  INFO 10116 --- [restartedMain] c.example.demo.IssuesServiceApplication  : No active profile set, falling back to default profiles: default
+2021-07-14 05:07:52.122  INFO 10116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-07-14 05:07:52.232  INFO 10116 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 1 MongoDB repository interfaces.
+2021-07-14 05:07:52.443  INFO 10116 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=03ee9cbc-ab59-3ec0-8b63-3403c9efdba4
+2021-07-14 05:07:52.830  INFO 10116 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2021-07-14 05:07:52.842  INFO 10116 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-14 05:07:52.843  INFO 10116 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-14 05:07:52.920  INFO 10116 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-14 05:07:52.921  INFO 10116 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1601 ms
+2021-07-14 05:07:53.126  INFO 10116 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-07-14 05:07:53.171  INFO 10116 --- [cluster-ClusterId{value='60eed3994931e0433e1c6be3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:68}] to localhost:27017
+2021-07-14 05:07:53.171  INFO 10116 --- [cluster-rtt-ClusterId{value='60eed3994931e0433e1c6be3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:69}] to localhost:27017
+2021-07-14 05:07:53.171  INFO 10116 --- [cluster-ClusterId{value='60eed3994931e0433e1c6be3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=17185400}
+2021-07-14 05:07:53.200  WARN 10116 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-14 05:07:53.259  WARN 10116 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-07-14 05:07:53.289  WARN 10116 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-07-14 05:07:53.386  WARN 10116 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myExceptionHandler' defined in file [C:\Users\001ZQF744\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\issues-service\target\classes\com\example\demo\exception\MyExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+2021-07-14 05:07:53.390  INFO 10116 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-14 05:07:53.404  INFO 10116 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-14 05:07:53.421 ERROR 10116 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'myExceptionHandler' defined in file [C:\Users\001ZQF744\Documents\workspace-spring-tool-suite-4-4.11.0.RELEASE\issues-service\target\classes\com\example\demo\exception\MyExceptionHandler.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1316) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:524) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.8.jar:5.3.8]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:771) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:763) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:438) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:339) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1329) ~[spring-boot-2.4.8.jar:2.4.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1318) ~[spring-boot-2.4.8.jar:2.4.8]
+	at com.example.demo.IssuesServiceApplication.main(IssuesServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.8.jar:2.4.8]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.example.demo.exception.MyExceptionHandler]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.8.jar:5.3.8]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 23 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The public type MyExceptionHandler must be defined in its own file
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+	The method setErrorMessage(String) is undefined for the type IssueErrorResponse
+	The method setStatusCode(int) is undefined for the type IssueErrorResponse
+
+	at com.example.demo.exception.MyExceptionHandler.<init>(MyExceptionHanlder.java:9) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.8.jar:5.3.8]
+	... 25 common frames omitted
+
